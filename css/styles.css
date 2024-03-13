@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Обнуление */
 *,
 *::before,
@@ -107,7 +108,7 @@ body {
   color: #0ef;
 }
 
-.navbar > a:not(:last-child) {
+.navbar>a:not(:last-child) {
   margin-right: 35px;
 }
 
@@ -194,7 +195,7 @@ body {
   animation-delay: 2s, 3s;
 }
 
-.img-container > img {
+.img-container>img {
   width: 100%;
   border-radius: 10px;
   margin-right: -20px;
@@ -213,6 +214,7 @@ body {
   transition: all 0.5s ease-in-out;
   display: none;
 }
+
 .burger__main {
   border-radius: 100px;
   height: 4px;
@@ -221,6 +223,7 @@ body {
   transition: all 0.3s ease 0s;
   z-index: 3;
 }
+
 .burger__main::before {
   content: "";
   border-radius: 100px;
@@ -231,6 +234,7 @@ body {
   transition: all 0.3s ease 0s;
   transform: translateY(-8px);
 }
+
 .burger__main::after {
   content: "";
   border-radius: 100px;
@@ -243,7 +247,6 @@ body {
 }
 
 .burger-bg.active {
-  border: 2px solid red;
   width: 100vh;
   height: 200vh;
   position: absolute;
@@ -267,12 +270,14 @@ body {
 .about {
   padding: 40px 12%;
 }
+
 .about__title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
 .about__text {
   font-size: 18px;
   opacity: 0;
@@ -284,18 +289,22 @@ body {
 .portfolio {
   padding: 100px 12%;
 }
+
 .portfolio__title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
 .portfolio__works {
   margin-top: 50px;
 }
-.portfolio__works > a:hover {
+
+.portfolio__works>a:hover {
   cursor: url(../img/link-external-regular-24.png) 2 2, pointer;
 }
+
 .portfolio__work {
   width: 100%;
   margin-bottom: 100px;
@@ -305,13 +314,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.portfolio__work > img {
+
+.portfolio__work>img {
   max-width: 100%;
   height: auto;
   display: block;
   width: inherit;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: 14px outset #96A2A4;
   border-radius: 10px;
   pointer-events: none;
@@ -382,78 +392,95 @@ body {
     transform: translateX(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slideTop {
   0% {
     transform: translateY(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slideBottom {
   0% {
     transform: translateY(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slideLeft {
   0% {
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes zoomIn {
   0% {
     transform: scale(0);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes floatImage {
   0% {
     transform: translateY();
   }
+
   50% {
     transform: translateY(-24px);
   }
+
   100% {
     transform: translateY();
   }
 }
+
 @media screen and (max-width: 1365px) {
   .home-content {
     max-width: 500px;
   }
 }
+
 @media screen and (max-width: 1265px) {
   .home-content {
     max-width: 400px;
   }
+
   .home-content h1 {
     font-size: 46px;
   }
+
   .home-content h3 {
     font-size: 22px;
   }
 }
+
 @media screen and (max-width: 1083px) {
   .home {
     flex-direction: column;
@@ -461,38 +488,49 @@ body {
     margin-top: 80px;
     padding: 20px 10%;
   }
+
   .home-content {
     max-width: 100%;
   }
+
   .img-container {
     margin-top: 30px;
   }
+
   .about {
     padding: 40px 10%;
   }
+
   .portfolio__works {
     padding: 40px 0%;
   }
+
   .portfolio__work {
     margin-bottom: 40px;
   }
 }
+
 @media screen and (max-width: 600px) {
   *::-webkit-scrollbar {
     width: 6px;
   }
+
   *::-webkit-scrollbar-track {
     background-color: #1f242d;
   }
+
   *::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 6px #0ef;
   }
+
   .navbar {
     display: none;
   }
-  .navbar > a:last-child {
+
+  .navbar>a:last-child {
     margin-top: 40px;
   }
+
   .navbar.active {
     position: absolute;
     display: flex;
@@ -501,18 +539,22 @@ body {
     flex-direction: column;
     z-index: 3;
   }
+
   .burger {
     display: flex;
   }
+
   .about__title-text {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .portfolio__works {
     margin-top: 0px;
     padding-top: 15px;
   }
+
   .name {
     padding: 5px 10px;
     position: absolute;
@@ -520,25 +562,33 @@ body {
     font-size: 16px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .header {
     padding: 20px 5%;
   }
+
   .home {
     padding: 20px 5%;
   }
+
   .burger {
     right: 20px;
   }
+
   .about {
     padding: 40px 5%;
   }
+
   .portfolio {
     padding: 40px 5%;
   }
+
   .name {
     font-size: 14px;
     padding: 0px;
     max-width: 250px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
