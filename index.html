@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <link rel='icon' href='./img/bx-user-circle.svg' type='image/x-icon'>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="./css/styles.css">
+   <title>Portfolio</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <a href="#" class="logo">Portfolio</a>
+         <nav class="navbar">
+            <a href="#aboutme" style="--i:1;">Обо мне</a>
+            <a href="#portfolio" style="--i:2;">Портфолио</a>
+         </nav>
+         <div class="burger">
+            <div class="burger__main"></div>
+            <div class="burger-bg"></div>
+         </div>
+      </header>
+      <section class="home">
+         <div class="home-content">
+            <h3>Привет, меня зовут</h3>
+            <h1>Станислав</h1>
+            <h3>И я <span class="multiple-text"></span></h3>
+            <p>Горжусь тем, что могу создавать красивые и функциональные веб-страницы с
+               использованием HTML, CSS и JS. У меня богатый опыт работы с этими технологиями, и я всегда готов сделать
+               ваш веб-проект привлекательным и интуитивно понятным для пользователей.</p>
+            <div class="social-media">
+               <a href="https://t.me/aevalss" style="--i:4"><i class='bx bxl-telegram'></i></a>
+               <a href="mailto:kravtsov.st16@gmail.com" style="--i:5"><i class='bx bxl-gmail'></i></a>
+            </div>
+         </div>
+         <div class="home-img">
+            <div class="img-container">
+               <img src="./img/my image.jpg" alt="">
+            </div>
+         </div>
+      </section>
+      <div class="about" id="aboutme">
+         <div class="about-container">
+            <div class="about__title-text">
+               <h3 class="about__title">Обо мне</h3>
+               <p class="about__text">Меня зовут Станислав, и я горжусь тем, что могу создавать красивые и
+                  функциональные веб-страницы с использованием HTML, CSS и JS. У меня богатый опыт работы с этими
+                  технологиями, и я всегда готов сделать ваш веб-проект привлекательным и интуитивно понятным для
+                  пользователей.
+                  Кроме того, я постоянно совершенствую свои навыки, и у меня есть опыт работы с препроцессором SCSS,
+                  который позволяет мне писать более эффективный и организованный CSS-код. Я также применяю методологию
+                  БЭМ (Блок-Элемент-Модификатор), чтобы создавать чистый и структурированный код.
+                  У меня также есть активный профиль на GitHub, где я демонстрирую свои проекты и деликатно погружаюсь в
+                  мир совместной разработки. Вы можете посмотреть на мои работы там и оценить, насколько я серьезно
+                  отношусь к своей профессии.
+                  Я сильно верю, что хорошо продуманный дизайн и насыщенный контент могут изменить взгляды и улучшить
+                  наш опыт в сети. С нетерпением жду возможности сотрудничества с вами и воплощения ваших идей в жизнь!
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio" id="portfolio">
+         <div class="portfolio-container">
+            <div class="portfolio__title">Мое портфолио</div>
+            <div class="portfolio__works">
+               <a href="https://aeevalss.github.io/vr/">
+                  <div class="portfolio__work">
+                     <img class="portfolio-img" src="./img/vr.png" alt="vr">
+                     <div class="name">адаптивный <span class="site1">vr</span> сайт</div>
+                  </div>
+               </a>
+               <a href="https://aeevalss.github.io/cyberpunk/">
+                  <div class="portfolio__work">
+                     <img class="portfolio-img" src="./img/cyberpunk.png" alt="cyberpunk">
+                     <div class="name">адаптивный <span class="site2">cyberpunk</span> сайт</div>
+                  </div>
+               </a>
+               <a href="https://aeevalss.github.io/fromboard-delivery/">
+                  <div class="portfolio__work">
+                     <img class="portfolio-img" src="./img/fromboard.png" alt="fromboard.png">
+                     <div class="name">адаптивный сайт <span class="site3">доставки</span></div>
+                  </div>
+               </a>
+               <a href="https://aeevalss.github.io/ngepet/">
+                  <div class="portfolio__work">
+                     <img class="portfolio-img" src="./img/ngepet.png" alt="ngepet">
+                     <div class="name">адаптивный сайт <span class="site4">NGEPET</span></div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="./script.js"></script>
+</body>
+
+</html>
